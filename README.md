@@ -6,7 +6,7 @@
 - **Framework**: .NET 6
 - **ประเภทโปรเจกต์**: Class Library
 
-### ตัวอย่างการใช้งาน
+### ตัวอย่างการใช้งาน(TrippleDES)
 var passwordManager = new PasswordManager();
 
 string key = "MySecretKey123";
