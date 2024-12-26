@@ -7,13 +7,15 @@
 - **ประเภทโปรเจกต์**: Class Library
 
 ### ตัวอย่างการใช้งาน(TrippleDES)
-var passwordManager = new PasswordManager();
+```csharp
+
+PasswordManager.TripleDES tripleDes = new PasswordManager.TripleDES();
 
 string key = "MySecretKey123";
 string plainText = "Hello, World!";
 
-string encryptedData = passwordManager.EncryptData(key, plainText);
+string encryptedData = tripleDes.EncryptData(key, plainText);
 Console.WriteLine($"Encrypted Data: {encryptedData}");
 
-string decryptedData = passwordManager.Decrypt(key, encryptedData);
+string decryptedData = tripleDes.Decrypt(key, encryptedData);
 Console.WriteLine($"Decrypted Data: {decryptedData}");
