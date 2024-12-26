@@ -9,14 +9,14 @@
 ### ตัวอย่างการใช้งาน
 var passwordManager = new PasswordManager();
 
-// กำหนด Key และข้อความ
+กำหนด Key และข้อความ
 string key = "MySecretKey123";
 string plainText = "Hello, World!";
 
-// การเข้ารหัส
+การเข้ารหัส
 string encryptedData = passwordManager.EncryptData(key, plainText);
 Console.WriteLine($"Encrypted Data: {encryptedData}");
 
-// การถอดรหัส
+การถอดรหัส
 string decryptedData = passwordManager.Decrypt(key, encryptedData);
 Console.WriteLine($"Decrypted Data: {decryptedData}");
